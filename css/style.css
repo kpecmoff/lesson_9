@@ -1,0 +1,302 @@
+/* &display=swap */
+@import "null.css";
+
+/* подключенный мною шрифт */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700,900&display=swap");
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* выровнял по центру страницы внутри родителя body */
+	max-width: 810px;
+	margin: 0px auto;
+}
+body {
+	/* задал шрифт и размер шрифта по умолчанию для всей страницы */
+	font-family: Lato;
+	font-size: 16px;
+}
+/* ================================================================ */
+
+.header {
+	/* отступил от хедера в низ к картинке */
+	margin-bottom: 40px;
+}
+h1 {
+	/* заданы параметры к главному загаловку */
+	font-size: 46px;
+	font-weight: 900;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 26px;
+}
+p {
+	line-height: 1.6;
+}
+.date {
+	display: block;
+}
+
+.social {
+	margin-left: 436px;
+	vertical-align: bottom;
+	display: inline-block;
+}
+
+.social p {
+	font-weight: 700;
+	color: #1E212C;
+	display: inline-block;
+}
+.block{
+	margin-bottom: 24px;
+}
+picture {
+	display: block;
+	margin-bottom: 60px;
+}
+.style {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.bold {
+	margin-bottom: 24px;
+}
+.size {
+	margin-bottom: 48px;
+}
+.pseudo {
+	padding-left: 42px;
+	background: url("../img/svg/braces.svg") 0px 3px / 28px no-repeat;
+}
+.text {
+	color: #424551;
+	margin-bottom: 48px;
+}
+.text p {
+	margin-bottom: 18px;
+}
+.text p:last-child {
+	margin: 0px;
+}
+
+.list {
+	margin-bottom: 24px;
+}
+.list li {
+	line-height: 1.6;
+	padding: 0 0 0 32px;
+}
+
+.list li::before {
+	content: "";
+	display: inline-block;
+	height: 23px;
+	width: 23px;
+	padding: 0 0 0 32px;
+	margin: 0px -2px 0px -32px;
+	vertical-align: top;
+	background: url("../img/svg/list.svg") left / 16px no-repeat;
+}
+.last{
+	margin-bottom: 63px;
+}
+.social-bottom {
+text-align: right;
+margin-bottom: 20px;
+}
+.social-bottom p{
+	font-weight: 700;
+	vertical-align: bottom;
+	color: #1E212C;
+	display: inline;
+}
+.soc-meta {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.soc-meta:hover {
+	background-color: #000;
+	border: 1px double #fff;
+	border-radius: 50%;
+}
+.btn-next {
+	display: inline-block;
+	border:  1px solid #696969;
+	border-radius: 20px;
+	background-color: #800000;
+	box-shadow: 3px 3px 10px 2px #000;
+	min-width: 240px;
+	text-align: center;
+}
+.btn-next:hover {
+	box-shadow: inset 1px 1px 10px 1px #fff;
+	background-color: #A52A2A;
+}
+.btn-next:active {
+	background-color: #fff;
+	box-shadow: inset 1px 1px 10px 2px #800000;
+}
+.btn-next a:hover {
+	color: #000;
+}
+.btn-next a {
+	display: block;
+	color: #fff;
+	padding: 10px;
+	font-weight: 700;
+	line-height: 2;
+}
+.btn-next a:hover::after {
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background:  url("../img/svg/arrow-forward-outline.svg") left / 16px no-repeat;
+	vertical-align: middle;
+}
+.btn-next a:active {
+	color: #800000;
+}
+
+/* ====================second page =========================== */
+
+
+.btn {
+	display: inline-block;
+	margin: 30px 0px 0px 20px;
+	border:  1px solid #696969;
+	border-radius: 20px;
+	background-color: #800000;
+	box-shadow: 3px 3px 10px 2px #000;
+	min-width: 240px;
+	text-align: center;
+}
+.btn:hover {
+	box-shadow: inset 1px 1px 10px 1px #fff;
+	background-color: #A52A2A;
+}
+.btn:active {
+	background-color: #fff;
+	box-shadow: inset 1px 1px 10px 2px #800000;
+}
+.btn a:hover {
+	color: #000;
+}
+.btn a {
+	display: block;
+	color: #fff;
+	padding: 10px;
+	font-weight: 700;
+	line-height: 2;
+}
+.btn a:hover::before {
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background:  url("../img/svg/arrow-back-outline.svg") left / 16px no-repeat;
+	vertical-align: middle;
+}
+.btn a:active {
+	color: #800000;
+}
+.main {
+	border: 3px solid #424551;
+	box-shadow: 0px 1px 3px 1px  #000;
+}
+
+.game-block {
+	min-height: 502px;
+	font-size: 0;
+}
+
+.game-block:hover {
+	background: url("../img/girls.webp") 0 0 / contain no-repeat;
+}
+.blue {
+	background-color: #1E90FF;
+}
+.game-block-item-1 {
+	width: 70px;
+	height: 50px;
+}
+.game-block-item-1:hover ~ .game-block-item-2, .game-block-item-2:hover {
+	visibility: visible;
+}
+.game-block-item-2 {
+	visibility: hidden;
+	width: 50px;
+	height: 50px;
+}
+.game-block-item-1:hover + .game-block-item-2, .game-block-item-2:hover {
+	width: 784px;
+}
+.game-block-item-3 {
+	width: 754px;
+	height: 50px;
+	display: inline-block;
+}
+.game-block-item-3-1 {
+	visibility: hidden;
+	width: 30px;
+	height: 50px;
+}
+.game-block-item-2:hover ~ .game-block-item-3-1, .game-block-item-3-1:hover {
+	display: inline-block;
+	visibility: visible;
+}
+.game-block-item-3-1:hover {
+	height: 100px;
+}
+.game-block-item-4-1 {
+	display: inline-block;
+	visibility: hidden;
+	height: 50px;
+	width: 30px;
+}
+.game-block-item-3-1:hover ~ .game-block-item-4 {
+	display: inline-block;
+	width: 754px;
+	height: 50px;
+}
+.game-block-item-3-1:hover ~ .game-block-item-4-1,
+.game-block-item-4-1:hover {
+	visibility: visible;
+	display: inline-block;
+}
+.game-block-item-4-1:hover {
+	width: 784px;
+}
+.game-block-item-5 {
+	width: 20px;
+	height: 200px;
+	visibility: hidden;
+}
+.game-block-item-4-1:hover ~ .game-block-item-5 {
+	visibility: visible;
+	height: 20px;
+}
+.game-block-item-5:hover {
+	visibility: visible;
+	height: 232px;
+}
+.game-block-item-6 {
+	visibility: hidden;
+	height: 20px;
+	width: 20px;
+	background-color: red;
+}
+.game-block-item-5:hover ~ .game-block-item-6, .game-block-item-6:hover {
+	visibility: visible;	
+}
+.game-block-item-6:hover {
+	width: 100%;
+	height: 500px;
+	background: url("../img/DSC_5393.webp") 0 0 / cover no-repeat;
+}
+.footer {
+}
